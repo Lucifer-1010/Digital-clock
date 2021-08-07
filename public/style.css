@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family:'Bebas Neue', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	/* background: #020100; */
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(0, 0, 0) 100%); 
+  
+}
+.container {
+	border: 10px solid rgb(0, 240, 0);
+	width: 450px;
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color:#fff;
+	font-size: 52px;
+	border-radius: 50%;
+	background: rgb(0, 0, 0);
+	box-shadow: 
+		0 0 10px rgb(64, 156, 64),
+		0 0 40px rgb(0, 240, 0),
+		0 0 75px rgb(0, 240, 0);
+}
+.time {
+	font-size: 1.5em;
+	color:rgb(0, 240, 0);
+	letter-spacing: 10px;
+}
+.blink-colon {
+	animation: blink 1s infinite linear;
+	color: aqua;
+}
+@keyframes blink {
+	0%, 100% {
+		opacity: 1;
+	}
+	30% {
+		opacity: 0.4;
+	}
+}
+.date-container {
+	margin-top: 6px;
+	padding: 10px;
+	font-size: 34px;
+	color: aqua
+}
+
+.me{
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 18px;
+	color: aqua;
+}
+.me a{
+	color: aqua;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+@media (min-width: 1024px) {
+	.container {
+	  background-attachment: fixed;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.container {
+	  font-size: 48px;
+	  line-height: 36px;
+	  border-radius: 20%
+	  
+	  
+	}
+	.container {
+	  font-size: 48px;
+	  line-height: 44px;
+	  margin-bottom: 30px;
+	  margin-top: 15px;
+	}
+  }
